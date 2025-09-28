@@ -1,0 +1,25 @@
+:root { --bg:#0b1220; --card:#121a2b; --muted:#aab3c5; --text:#eaf0ff; --accent:#4ea1ff; --ok:#35c28d; --warn:#ffcc00; }
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+.container{max-width:1080px;margin:32px auto;padding:0 16px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.card{background:var(--card);border:1px solid #1f2a44;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+h1{font-size:22px;margin:0} h2{font-size:18px;margin:0 0 12px}
+.btn{border:none;border-radius:10px;padding:10px 14px;color:#081024;background:var(--accent);cursor:pointer;font-weight:600}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.input, select{width:100%;padding:10px;border-radius:10px;border:1px solid #233153;background:#0c1424;color:var(--text)}
+.grid{display:grid;gap:12px}
+.grid-2{grid-template-columns:1fr 1fr}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #1f2a44}
+.badge{padding:2px 8px;border-radius:999px;font-size:12px;display:inline-block}
+.badge.RECEIVED{background:#20324d;color:#9ec2ff}
+.badge.RECORDED{background:#243a3a;color:#9ef5f5}
+.badge.BUSINESS_VALIDATION{background:#3a2b4d;color:#e3b8ff}
+.badge.ACCOUNTED{background:#223a2e;color:#b2f5dc}
+.badge.TREASURY_PREP{background:#3a3622;color:#f5e9b2}
+.badge.PAYMENT_VALIDATION{background:#3a2222;color:#f5b2b2}
+.badge.SIGNED{background:#2a3a22;color:#c9f5b2}
+.search{display:flex;gap:8px}
+.small{color:var(--muted);font-size:12px}
+footer{margin-top:24px;color:var(--muted);text-align:center}
+.alert{padding:10px;border-radius:10px;background:#332222;color:#ffaaaa;border:1px solid #5a2a2a;margin:10px 0}
